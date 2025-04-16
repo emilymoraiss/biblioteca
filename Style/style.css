@@ -1,0 +1,161 @@
+:root {
+    --one--: #ee4fbe;
+    --two--: #e7e2e2;
+    --tree--: #d8d2d2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: linear-gradient(rgb(228, 219, 219), var(--tree--));
+
+}
+
+.navbar {
+    background: var(--one--);
+    width: 100%;
+    color: #e2dcdc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.navbar h1 {
+    font-size: 2.5em;
+
+
+}
+
+.navbar input {
+    padding: 10px 60px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 225, 225);
+    outline: none;
+
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.menu a {
+    color: rgb(240, 238, 238);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.menu a:hover {
+    transform: scale(1.17);
+
+}
+
+.banner {
+    width: 74%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+
+
+}
+
+.banner img {
+    width: 100%;
+    height: 630px;
+    position: absolute;
+
+
+}
+
+footer {
+    width: 100%;
+    background-color: var(--tree--);
+    color: #8b8181;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.checkout {
+    width: 100px;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid var(--tree--);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: hsl(0, 7%, 92%);
+    box-shadow: 2px 4px 10px var(--one--);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px var(--tree--);
+
+}
+
+.vitrini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 10px;
+
+}
+
+.card p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+
+}
+
+@media screen and (max-width:783px) {
+    .lista-header {
+        flex-direction: column;
+        background-color: #8b8181;
+        padding: 10px;
+        position: absolute;
+        top: -40px;
+        left: -76px;
+
+    }
+    .menu {
+        display: none;
+
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+}
